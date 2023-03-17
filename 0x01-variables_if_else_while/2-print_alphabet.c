@@ -2,9 +2,9 @@
 
 /**
  * main - Entry point
- * 
+ *
  * Description: 'this program print on'
- * 
+ *
  * Return: Always 0 (Success)
  */
 
