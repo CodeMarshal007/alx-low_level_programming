@@ -9,17 +9,20 @@
  */
 int main(void)
 {
-    int d;
+    int d1, d2;
 
-    for (d = 0; d < 90; d++)
+    for (d1 = 0; d1 < 9; d1++)
     {
-        putchar((d / 10) + '0');
-        putchar((d % 10) + '0');
-        
-        if (d != 89)
+        for (d2 = d1 + 1; d2 < 10; d2++)
         {
-            putchar(',');
-            putchar(' ');
+            putchar((d1) + '0');
+            putchar((d2) + '0');
+            
+            if (d1 != 8 || d2 != 9)
+            {
+                putchar(',');
+                putchar(' ');
+            }
         }
     }
     
