@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: 'prints the alphabet, in lowercase'
+ *print_alphabet: 'prints the alphabet, in lowercase'
  *
  * Return: void
  */
