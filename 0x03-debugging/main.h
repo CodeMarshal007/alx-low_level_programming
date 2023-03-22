@@ -3,9 +3,10 @@
 
 /**
  * DESC: Header file containing declarations for all functions
- * used in the 0x02 directory
+ * used in the 0x03 directory
  */
 
 int positive_or_negative();
+int largest_number(int a, int b, int c);
 
 #endif
