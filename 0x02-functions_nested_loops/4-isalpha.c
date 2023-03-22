@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * _isalpha - ' checks for alphabetic character'
  *
- * Description: ' checks for alphabetic character'
+ * @c: single letter input
  *
  * Return: 1 if c is letter, else 0
  */
@@ -13,10 +13,10 @@ int _isalpha(int c)
 
 	if (c >= 'A' && c <= 'z')
 	{
-		return 1;
+		return (1);
 	}
 	else
 	{
-		return 0;
+		return (0);
 	}
 }

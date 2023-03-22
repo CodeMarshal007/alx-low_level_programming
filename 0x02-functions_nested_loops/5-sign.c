@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_sign - 'prints the sign of a number'
  *
- * Description: ' checks for alphabetic character'
+ * @n: number input
  *
- * Return: 1 if c is letter, else 0
+ * Return: 1 if n is greater than zero
  */
 
 int print_sign(int n)
@@ -14,16 +14,16 @@ int print_sign(int n)
 	if (n > 0)
 	{
 		_putchar('+');
-		return 1;
+		return (1);
 	}
 	else if (n < 0)
 	{
 		_putchar('-');
-		return -1;
+		return (-1);
 	}
 	else
 	{
 		_putchar('0');
-		return 0;
+		return (0);
 	}
 }
