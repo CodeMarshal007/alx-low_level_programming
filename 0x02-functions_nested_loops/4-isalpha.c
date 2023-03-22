@@ -3,6 +3,8 @@
 /**
  * _isalpha - ' checks for alphabetic character'
  *
+ * @c: single letter input
+ *
  * Return: 1 if c is letter, else 0
  */
 

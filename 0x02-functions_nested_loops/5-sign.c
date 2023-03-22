@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * print_sign - ' checks for alphabetic character'
+ * print_sign - 'prints the sign of a number'
  *
- * Return: 1 if c is letter, else 0
+ * @n: number input
+ *
+ * Return: 1 if n is greater than zero
  */
 
 int print_sign(int n)
