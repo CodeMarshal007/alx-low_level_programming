@@ -2,11 +2,10 @@
 #include <stdio.h>
 
 /**
- * _strcpy
- -    prints n elements of an array of integers
+ * _strcpy -    prints n elements of an array of integers
  * @src: pointing to source string
  * @dest: pointing to destination string
- * Return: void
+ * Return: pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
