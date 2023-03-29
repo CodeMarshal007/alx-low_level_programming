@@ -5,7 +5,8 @@
  * _strcmp -  compares two strings.
  * @s1:  string
  * @s2:  string
- * Return: int
+ * Return: an integer less than, equal to, or greater than zero, 
+ * depending on whether s1 is less than, equal to, or greater than s2
  */
 
 int _strcmp(char *s1, char *s2)
