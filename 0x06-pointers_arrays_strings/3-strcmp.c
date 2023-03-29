@@ -5,7 +5,7 @@
  * _strcmp -  compares two strings.
  * @s1:  string
  * @s2:  string
- * Return: an integer less than, equal to, or greater than zero, 
+ * Return: an integer less than, equal to, or greater than zero,
  * depending on whether s1 is less than, equal to, or greater than s2
  */
 
@@ -16,7 +16,7 @@ int _strcmp(char *s1, char *s2)
 
 	if (s1 == NULL || s2 == NULL)
 	{
-		return 0;
+		return (0);
 	}
 
 	while (s1[s1Len] != '\0')
