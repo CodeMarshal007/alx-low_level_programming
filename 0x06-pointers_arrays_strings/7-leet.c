@@ -10,6 +10,7 @@
 char *leet(char *str)
 {
 	int i = 0;
+
 	while (str[i] != '\0')
 	{
 		if (str[i] == 'a' || str[i] == 'A')
@@ -35,6 +36,6 @@ char *leet(char *str)
 
 		i++;
 	}
-    return (str);
+	return (str);
 }
 
