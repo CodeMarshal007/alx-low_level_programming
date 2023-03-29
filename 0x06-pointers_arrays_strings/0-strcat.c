@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * _strcat -  concatenates two strings.
- * @dest: pointer to a string
- * @src: pointer to a string
- * Return: pointer to the resulting string dest
- */
+* _strcat -  concatenates two strings.
+* @dest: pointer to a string
+* @src: pointer to a string
+* Return: pointer to the resulting string dest
+*/
 char *_strcat(char *dest, char *src)
 {
 	int destLen = 0, srcLen = 0, i, j;
@@ -25,7 +25,6 @@ char *_strcat(char *dest, char *src)
 	{
 		dest[i] = src[j];
 	}
-	
 	dest[i] = '\0';
 
 	return (dest);
