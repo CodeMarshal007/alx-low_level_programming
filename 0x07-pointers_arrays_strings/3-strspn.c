@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strchr - locates a character in a string
+ * _strspn - gets the length of a prefix substring
  * @s:  string to search in
  * @accept: string to match
  * Return: number of bytes in the initial segment of s
