@@ -24,7 +24,7 @@ char *_strstr(char *haystack, char *needle)
 			j++;
 			if (needle[j] == '\0')
 			{
-				return &haystack[first_occurrence];
+				return (&haystack[first_occurrence]);
 			}
 		}
 		else
@@ -35,5 +35,5 @@ char *_strstr(char *haystack, char *needle)
 		i++;
 	}
 
-	return NULL;
+	return (NULL);
 }
