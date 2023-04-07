@@ -15,7 +15,9 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 	{
-		printf("%d\n", 0);
+		printf("%d", 0);
+
+		putchar('\n');
 
 		return (1);
 	}
@@ -35,7 +37,9 @@ int main(int argc, char *argv[])
 			result = result + atoi(argv[i]);
 	}
 
-	printf("%d\n", result);
+	printf("%d", result);
+
+	putchar('\n');
 
 	return (0);
 }
