@@ -12,6 +12,7 @@ char *argstostr(int ac, char **av)
 	int i, j, k = 0, len = 0;
 
 	char *ptr = NULL;
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
@@ -32,6 +33,6 @@ char *argstostr(int ac, char **av)
 		ptr[k] = '\n';
 		k++;
 	}
-	ptr[k] = '\0';
+	ptr[--k] = '\0';
 	return (ptr);
 }
