@@ -3,8 +3,9 @@
 /**
  * init_dog - a function that initialize a variable of type struct dog
  *
+ * struct dog - new type struct dog
  * @d: struct dog object
-  * @name: name of dog
+ * @name: name of dog
  * @age: age of dog
  * @owner: owner of dog
  *
