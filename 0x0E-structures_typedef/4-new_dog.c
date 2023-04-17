@@ -5,7 +5,7 @@
 
 /**
  * new_dog -  a function that creates a new dog.
- * dog_t - Typedef for struct dog
+ * my_new_dog - Typedef for struct dog
  * @name: name member
  * @age: age member
  * @owner: owner member
@@ -20,7 +20,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (my_new_dog == NULL)
 		return (NULL);
-
 	my_new_dog->name = strdup(name);
 	if (my_new_dog->name == NULL)
 	{
@@ -28,7 +27,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	my_new_dog->age = age;
-
 	my_new_dog->owner = strdup(owner);
 	if (my_new_dog->owner == NULL)
 	{
