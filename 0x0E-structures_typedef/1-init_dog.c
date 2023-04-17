@@ -1,13 +1,14 @@
 #include "dog.h"
-#include <stdio.h>
 
 /**
  * init_dog - a function that initialize a variable of type struct dog
+ *
  * @d: struct dog object
  * struct dog -  definition for a new struct dog
- * @name: name member
- * @age: age member
- * @owner: owner member
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ *
  * Return:  nothing
  */
 
