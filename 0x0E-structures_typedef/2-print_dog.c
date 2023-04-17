@@ -5,9 +5,6 @@
  * print_dog -  a function that prints a struct dog
  * @d: struct dog object
  * struct dog -  definition for a new struct dog
- * @name: name member
- * @age: age member
- * @owner: owner member
  * Return:  nothing
  */
 
