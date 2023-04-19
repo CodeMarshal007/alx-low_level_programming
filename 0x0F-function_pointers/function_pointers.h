@@ -4,6 +4,10 @@
 #include <stddef.h>
 
 /**
+ * print_name - a function that prints a name
+ * @name:  name to print
+ * @f:  pointer to a function || callback function
+ *
  * DESC: Header file containing declarations for all functions
  * used in the 0x0F-function_pointers directory
  */
