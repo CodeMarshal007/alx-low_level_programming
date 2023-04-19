@@ -11,6 +11,9 @@ int main(int argc, char *argv[])
 {
 	int i, number_of_bytes;
 
+	if (argc == 0 || argv[0] == NULL)
+		return 1;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
