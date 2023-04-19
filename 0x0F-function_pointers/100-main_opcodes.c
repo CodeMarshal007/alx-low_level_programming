@@ -3,11 +3,13 @@
 
 /**
  * main - a program that prints the opcodes of its own main function
+ * @argc: argument count
+ * @argv: array of arguments
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
-	int number_of_bytes;
+	int i, number_of_bytes;
 
 	if (argc != 2)
 	{
@@ -22,7 +24,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	for (int i = 0; i < number_of_bytes; i++)
+	for (i = 0; i < number_of_bytes; i++)
 		printf("%02x ", ((unsigned char *)main)[i]);
 
 	printf("\n");
