@@ -5,7 +5,6 @@
  * sum_them_all - sum up all of its parameters
  * @n: the number of parameters to sum
  * Return: the sum of all its parameters.
- * 
  * DESC: Header file containing declarations for all functions
  * used in the 0x10-variadic_functions directory
  */
@@ -16,4 +15,4 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
-#endif 
+#endif
