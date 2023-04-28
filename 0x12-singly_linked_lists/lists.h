@@ -20,7 +20,7 @@ typedef struct list_s
 /**
  * _putchar - write a char to the std output
  * @c: char
- * Return : length of char written
+ * Return: length of char written
  */
 int _putchar(char c);
 
