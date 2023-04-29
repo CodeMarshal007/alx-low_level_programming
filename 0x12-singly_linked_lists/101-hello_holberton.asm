@@ -1,4 +1,5 @@
 section .data
+	align 8
 	message db "Hello, Holberton", 0Ah
 
 section .text
