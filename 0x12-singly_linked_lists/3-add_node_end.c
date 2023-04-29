@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
- * add_node - adds a new node at the end of a list_t list
+ * add_node_end - adds a new node at the end of a list_t list
  * @head: head
  * @str: string
  * Return: address of the new element, or NULL if it failed
