@@ -1,14 +1,16 @@
 section .data
-	align 8
-	message db "Hello, Holberton", 0Ah
+	msg db "Hello, Holberton",10
 
 section .text
-	global main
-	extern printf
+	global _start
 
-main:
-	push message
-	call printf
-	add rsp, 8
-	xor eax, eax
-	ret
+_start:
+	mov rax, 1
+	mov rdi, 1
+	mov rsi, msg
+	mov rdx, 13
+	syscall
+
+	mov rax, 60
+	mov rdi, 0
+	syscall
