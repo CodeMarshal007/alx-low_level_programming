@@ -1,16 +1,13 @@
 section .data
-	msg db "Hello, Holberton", 0x0A
+	message db "Hello, Holberton", 0Ah
 
 section .text
-	global _asm_main
+	global main
+	extern printf
 
-_start:
-	mov eax, 4 ; System call for write
-	mov ebx, 1 ; File descriptor for stdout
-	mov ecx, msg ; Pointer to message
-	mov edx, 14 ; Message length
-	int 0x80 ; Call kernel
-
-	mov eax, 1 ; System call for exit
-	xor ebx, ebx ; Exit code
-	int 0x80 ; Call kernel
+main:
+	push message
+	call printf
+	add rsp, 8
+	xor eax, eax
+	ret
