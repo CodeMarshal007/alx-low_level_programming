@@ -1,21 +1,20 @@
 section .data
     msg db "Hello, Holberton",10
+    len equ $-msg
 
 section .text
     global _start
 
 _start:
-    mov rax, 1
-    mov rdi, 1
+    ; write message to stdout
+    mov eax, 1
+    mov edi, 1
     mov rsi, msg
-    mov rdx, 13
-    syscall
-    
-    mov rax, 60
-    mov rdi, 0
+    mov edx, len
     syscall
 
-main:
-    xor eax, eax
-    ret
+    ; exit program
+    mov eax, 60
+    xor edi, edi
+    syscall
 
