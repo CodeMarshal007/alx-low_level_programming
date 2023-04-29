@@ -2,7 +2,7 @@ section .data
 	msg db "Hello, Holberton", 0x0A
 
 section .text
-	global _start
+	global _asm_main
 
 _start:
 	mov eax, 4 ; System call for write
