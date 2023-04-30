@@ -14,9 +14,9 @@ size_t print_listint(const listint_t *h)
 	const listint_t *current;
 
 	if (h == NULL)
-	{	
-		return(count);
-		exit(1);
+	{
+		return (count);
+		exit (1);
 	}
 
 	current = h;
