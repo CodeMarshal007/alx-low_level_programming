@@ -15,7 +15,10 @@ size_t list_len(const list_t *h)
 	size_t count = 0;
 
 	if (h == NULL)
+	{
+		return (count);
 		exit(98);
+	}
 	current = h;
 	while (current != NULL)
 	{
