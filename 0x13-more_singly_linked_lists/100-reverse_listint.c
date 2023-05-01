@@ -5,7 +5,6 @@
 /**
  * reverse_listint - reverses a listint_t linked list.
  * @head: pointer to head
- * @index:  index of the node that should be deleted
  * Return:  a pointer to the first node of the reversed list
  */
 listint_t *reverse_listint(listint_t **head)
