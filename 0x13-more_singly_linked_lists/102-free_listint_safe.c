@@ -13,7 +13,7 @@ size_t free_listint_safe(listint_t **h)
 	size_t count = 0, i;
 
 	listint_t *next_node, *current_node = *h;
-    
+
 	listint_t *visited[1024] = {NULL};
 
 	if (h == NULL || *h == NULL)
