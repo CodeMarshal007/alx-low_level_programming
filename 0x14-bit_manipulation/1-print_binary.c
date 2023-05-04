@@ -16,9 +16,6 @@ void print_binary(unsigned long int n)
 		printf("0");
 		return;
 	}
-	if (n < 0)
-		return;
-
 	for (i = 31; i >= 0; i--)
 	{
 		if ((n >> i) & 1)
