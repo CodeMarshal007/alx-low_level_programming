@@ -11,6 +11,14 @@ void print_binary(unsigned long int n)
 	int i;
 	int significant_bit = 0;
 
+	if (n == 0)
+	{
+		printf("0");
+		return;
+	}
+	if (n < 0)
+		return;
+
 	for (i = 31; i >= 0; i--)
 	{
 		if ((n >> i) & 1)
@@ -21,6 +29,4 @@ void print_binary(unsigned long int n)
 		else if (significant_bit)
 			printf("0");
 	}
-	if (!significant_bit)
-		printf("0");
 }
