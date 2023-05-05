@@ -16,14 +16,18 @@ void print_binary(unsigned long int n)
 		printf("0");
 		return;
 	}
-	for (i = 31; i >= 0; i--)
+
+	for (i = sizeof(n) * 8 - 1; i >= 0; i--)
 	{
 		if ((n >> i) & 1)
 		{
 			printf("1");
 			significant_bit = 1;
 		}
-		else if (significant_bit)
+		else
+		{
+			if (significant_bit)
 			printf("0");
+		}
 	}
 }
