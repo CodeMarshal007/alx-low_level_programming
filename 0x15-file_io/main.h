@@ -2,6 +2,7 @@
 #define MAIN_H
 #include <stdlib.h>
 
+#define BUFFER_SIZE 1024
 /**
  * _putchar - write a char to the std output
  * @c: char
