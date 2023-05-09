@@ -12,8 +12,10 @@
  */
 void print_magic(unsigned char *e_ident)
 {
+    int i;
+
     printf("  Magic:   ");
-    for (int i = 0; i < EI_NIDENT; i++)
+    for (i = 0; i < EI_NIDENT; i++)
     {
         printf("%02x ", e_ident[i]);
     }
@@ -169,12 +171,13 @@ void print_header(Elf64_Ehdr *header)
  * main - displays the information contained in the ELF header at the start of an ELF file
  * @argc: number of command-line arguments
  * @argv: array of pointers to the command-line arguments
- * 
+ *
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
     int fd;
+    Elf64_Ehdr header;
 
     if (argc < 2)
     {
@@ -188,7 +191,6 @@ int main(int argc, char *argv[])
         exit(98);
     }
 
-    Elf64_Ehdr header;
     if (read(fd, &header, sizeof(header)) < 0)
     {
         fprintf(stderr, "Error: could not read ELF header from file '%s'\n", argv[1]);
