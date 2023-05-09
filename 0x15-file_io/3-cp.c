@@ -5,6 +5,8 @@
 
 /**
  * main - copies the content of a file to another file
+ * @ac: number of command-line arguments
+ * @av: pointer to array of command-line arguments
  *
  * Return: Always 0.
  */
