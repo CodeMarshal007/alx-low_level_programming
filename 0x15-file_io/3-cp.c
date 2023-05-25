@@ -6,7 +6,7 @@
 /**
  * main - copies the content of a file to another file
  * @ac: number of command-line arguments
- * @av: pointer to array of command-line arguments
+ * @av: array of pointers to the command-line arguments
  *
  * Return: Always 0.
  */
@@ -31,11 +31,6 @@ int main(int ac, char **av)
 	{
 		dprintf(2, "Error: Can't write to %s\n", av[2]);
 		close(fd1);
-		if (close(fd2) == -1)
-		{
-			dprintf(2, "Error: Can't close fd %d\n", fd2);
-			exit(100);
-		}
 		exit(99);
 	}
 	while ((bytes_read = read(fd1, buffer, 1024)) > 0)
@@ -66,5 +61,6 @@ int main(int ac, char **av)
 		dprintf(2, "Error: Can't close fd %d\n", fd2);
 		exit(100);
 	}
-	return 0;
+
+	return (0);
 }
