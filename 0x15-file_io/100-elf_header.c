@@ -148,7 +148,7 @@ void print_type(Elf64_Half e_type)
  */
 void print_entry(Elf64_Addr e_entry)
 {
-    printf("  Entry point address:               %#lx\n", e_entry);
+    printf("  Entry point address:               %#lx\n", (unsigned long)e_entry);
 }
 /**
  * print_header - prints the entire ELF file header
